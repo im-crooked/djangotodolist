@@ -1,0 +1,34 @@
+{% load static %}
+{% load staticfiles %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>todolist</title>
+  <script type="text/javascript" src="{% static 'js/lib/jquery-3.4.1.min.js' %} "></script>
+
+  <link rel="stylesheet" href="{% static 'css/my_css.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/63397654c4.js"></script>
+
+
+</head>
+<body>
+  <div id="main">
+    <h1> TO DO LIST <i class="fas fa-plus" id="plus"></i></h1>
+    <input type="text" name="" placeholder="Add a new todo">
+    <ul>
+      <li> <span><i class="fas fa-trash-alt"></i></span>Sample item <div class="date">dd/mm/yyy</div></li>
+      <li> <span><i class="fas fa-trash-alt"></i></span>Click "+" to add a item <div class="date"></div> </li>
+      <li> <span><i class="fas fa-trash-alt"></i></span>Click on the list to cross the item <div class="date"></div> </li>
+      <li> <span><i class="fas fa-trash-alt"></i></span>Hover on list and click delete to delete<div class="date"></div> </li>
+    </ul>
+  </div>
+
+
+
+  <script type="text/javascript" src="{% static 'js/my_js.js' %}"></script>
+</body>
+</html>
